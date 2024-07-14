@@ -1,0 +1,99 @@
+{% extends 'layout.html' %}
+{% block body %}
+{{ path|safe}}
+
+<div class="actualpost">
+	<div class="actualposttitle">
+		<a href="/viewpost?post={{ post.postID }}">{{post.title}}</a>
+		<div class="postposter" {% if post.user.admin %} style="color: red;" {% endif %}>
+			{{ post.user.username }}
+		</div>
+		<div class="posttime">
+			{{ post.get_time_string() }}
+		</div>
+	</div>
+	<div class="postvideo">
+		<video controls width="640">
+			<source src={{ media_filepath }}  type="video/mp4"/>
+		</video>
+	</div>
+	<div class="postcontent">
+		{{post.content}}
+	</div>
+
+
+</div>
+<div class="addcomment" id="addcomment">
+	<form action="/action_comment?post={{ post.postID }}" method="POST">
+		<textarea class="inputbox varwidth" rows="6" name="content"></textarea><br>
+		<input class="inputbox" style="margin-bottom: 1%;" type="submit" value="Comment">
+	</form>
+</div>
+<div class="reacts">
+	<form action="/action_react?post={{ post.postID }}" method="POST">
+		<button class="btn btn-default btn-sm" type="submit" name="thumbsup" style={{thumbsup_style}}>
+			  <span class="glyphicon glyphicon-thumbs-up"></span> {{thumbsup_count}}
+			</button>
+		<button class="btn btn-default btn-sm" type="submit" name="heart" style={{heart_style}}>
+			  <span class="glyphicon glyphicon-heart"></span> {{heart_count}}
+			</button>
+		<button class="btn btn-default btn-sm" type="submit" name="fire" style={{fire_style}}>
+			  <span class="glyphicon glyphicon-fire"></span> {{fire_count}}
+			</button>
+		<button class="btn btn-default btn-sm" type="submit" name="music" style={{music_style}}>
+			  <span class="glyphicon glyphicon-music"></span> {{music_count}}
+			</button>
+	</form>
+</div>
+<div style="text-align: center;">
+
+
+
+	{% if current_user.is_authenticated %}
+	<input type="button" id="displayaddcomment" onclick="toggle()" value="Add a comment">
+
+	{% else %}
+	<a href="/loginform">Login or register to make a comment</a>
+	{% endif %}
+</div>
+{%if comments%}
+<div class="comments">
+{% for comment in comments %}
+
+	<div class="comment">
+		<div class="commentuser">
+			(<span  {% if comment.user.admin %} style="color: red;" {% endif %}>{{ comment.user.username }}</span>) -
+		</div>
+		<div class="commentcontent">
+			{{ comment.content }}
+		</div>
+
+		<div class="commenttime">
+			{{ comment.get_time_string() }}
+		</div>
+	</div>
+	<br>
+
+
+{% endfor %}
+</div>
+{% endif %}
+<script type="text/javascript">
+function toggle(){
+	var div = document.getElementById("addcomment");
+	var button = document.getElementById("displayaddcomment")
+	if(div.style.display == "none" || div.style.display.trim() == ""){
+		div.style.display = "inline";
+		button.value="Hide";
+	}else{
+		div.style.display = "none";
+		button.value="Add a comment"
+	}
+
+}
+</script>
+
+
+{% endblock %}
+
+
