@@ -197,10 +197,10 @@ menu.nav {
 /* Projects Section Styling*/
 .project-container {
     width: 100%;
-    height: 40vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 .project-container > div {
     display: flex;
@@ -212,7 +212,7 @@ menu.nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0 10px;
+    padding-top: 25px;
 }
 .circle {
     display: block;
@@ -239,6 +239,58 @@ a:visited {
 a:active {
     opacity: 0.8;
 }
+.proficiency-container {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.proficiency-left {
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    /*background-color: rgb(92, 134, 156);*/
+    color: rgb(243, 244, 246);
+    height: 40vw;
+    width: 50%;
+}
+div.pl2 {
+    color: rgb(243, 244, 246);
+}
+.pl1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.pl2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+.pl3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+.proficiency-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(92, 134, 156);
+    height: 40vw;
+    width: 50%;
+}
+
 menu.skills {
 
 }
