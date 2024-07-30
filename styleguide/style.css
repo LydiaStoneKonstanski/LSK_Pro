@@ -111,7 +111,6 @@ h2 {
     margin: 10px;
 }
 .font-reg {
-    font-family: ;
     display: block;
     text-decoration: none;
     font-style: normal;
@@ -119,14 +118,12 @@ h2 {
 }
 .font-ital {
     display: block;
-    font-family: ;
     font-style: italic;
     text-decoration: none;
     margin: 8px 0px;
 }
 
 .font-bold {
-    font-family: ;
     display: block;
     width: 310px;
     font-weight: 700;
@@ -149,42 +146,66 @@ h2 {
 }
 
 .font-one {
-    font-family: ;
+    font-family: "Young Serif", serif;
 }
 .font-two {
-    font-family: ;
+    font-family: "Montserrat", sans-serif;
 }
 .font-three {
-    font-family: ;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
 }
-.font-four {
-    font-family: ;
+.t-one {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(92, 134, 156);
+}
+.t-two {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(92, 134, 156);
+}
+.t-three {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.17em;
+    color: rgb(133, 160, 179);
+}
+.t-four {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+    color: rgb(10, 26, 39);
 }
 
 .btn-primary {
-    background-color: #4BCFFA;
-    color: white;
+    background-color: rgb(243, 244, 246);
+    color: rgb(10, 26, 39);
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #0a1a27;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
     font-size: 20px;
     cursor: pointer;
 }
-
 .btn-secondary {
-    background-color: #d957d9;
-    color: white;
+    background-color: rgb(92, 134, 156);
+    color: rgb(243, 244, 246);
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #0a1a27;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     cursor: pointer;
 }
 
 .btn-icon {
-    background-color: #4fe0b0;
+    background-color: rgb(92, 134, 156);
+    color: rgb(243, 244, 246);
     border: none;
-    color: white;
     padding: 12px 16px;
     font-size: 20px;
     cursor: pointer;
