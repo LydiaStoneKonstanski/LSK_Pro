@@ -30,7 +30,24 @@ h4 {
     font-size: 1em;
     color: rgb(10, 26, 39);
 }
-
+.white {
+    color: rgb(243, 244, 246);
+}
+.dk-navy {
+    color: rgb(10, 26, 39);
+}
+.dk-grey {
+    color: rgb(68, 81, 90);
+}
+.lt-grey {
+    color: rgb(186, 200, 211);
+}
+.lt-blue-grey {
+    color: rgb(133, 160, 179);
+}
+.dk-blue-grey {
+    color: rgb(92, 134, 156);
+}
 nav {
 
 }
