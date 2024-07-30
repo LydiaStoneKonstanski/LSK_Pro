@@ -1,3 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 244, 246);
+    color: rgb(10, 26, 39);
+}
+/*Uses: Primary and secondary headlines are visually equal
+color: Dk Blue Grey unless the background-color is also Dk Blue Grey, in which case, use White.*/
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(92, 134, 156);
+}
+/*Uses: Just for Project Titles
+Lt Blue Grey on white.*/
+h3 {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(92, 134, 156);
+}
+/*Uses: For all other titles that aren't Young Serif.
+Navy if on white or Lt Grey background-color, or White if on Dk Blue Grey background-color.*/
+h4 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+    color: rgb(10, 26, 39);
+}
+
 nav {
 
 }
