@@ -4,9 +4,22 @@ body {
     background-color: rgb(243, 244, 246);
     color: rgb(10, 26, 39);
 }
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900*/
+.montserrat-<uniquifier> {
+                 font-family: "Montserrat", sans-serif;
+                 font-optical-sizing: auto;
+                 font-weight: <weight>;
+                 font-style: normal;
+             }
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 h1 {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Young Serif", serif;
     display: block;
     font-size: 32px;
     font-weight: 700;
@@ -15,7 +28,7 @@ h1 {
 }
 h2 {
    display: block;
-   font-family: "Nunito Sans", sans-serif;
+   font-family: "Young Serif", serif;
    font-size: 24px;
    font-weight: 700;
    margin: 19.92px;
@@ -27,12 +40,14 @@ h2 {
     overflow: scroll;
     width: 100%;
     border: 2px solid gray;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 10px 0px;
     padding: 10px;
 }
 .color-mini {
     display: inline-block;
+    height: 350px;
+    width: 450px;
     justify-content: center;
     padding-left: 40px;
 }
@@ -71,6 +86,10 @@ h2 {
 .swatch.color-five {
     background-color: rgb(92, 134, 156);
     color: rgb(243, 244, 246);
+}
+.swatch.color-six {
+    background-color: rgb(243, 244, 246);
+    color: rgb(10, 26, 39);
 }
 
 .font-mini {
