@@ -5,19 +5,18 @@ body {
     color: rgb(10, 26, 39);
 }
 /* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 100 to 900*/
+ <weight>: Use a value from 100 to 900
 .montserrat-<uniquifier> {
                  font-family: "Montserrat", sans-serif;
                  font-optical-sizing: auto;
                  font-weight: <weight>;
                  font-style: normal;
-             }
+             }*/
 .young-serif-regular {
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
 }
-
 h1 {
     font-family: "Young Serif", serif;
     display: block;
@@ -82,7 +81,6 @@ h2 {
     background-color: rgb(186, 200, 211);
     color: rgb(243, 244, 246);
 }
-
 .swatch.color-five {
     background-color: rgb(92, 134, 156);
     color: rgb(243, 244, 246);
@@ -91,24 +89,15 @@ h2 {
     background-color: rgb(243, 244, 246);
     color: rgb(10, 26, 39);
 }
-
 .font-mini {
     display: inline-block;
     padding-left: 10px;
-}    
-
+}
 .font-cont {
     display: block;
     width: 320px;
     text-align: left;
     margin-left: 10px;
-}
-.font-name {
-    font-family: ;
-    display: block;
-    font-size: 20px;
-    text-decoration: underline;
-    margin: 10px;
 }
 .font-reg {
     display: block;
@@ -122,22 +111,12 @@ h2 {
     text-decoration: none;
     margin: 8px 0px;
 }
-
 .font-bold {
     display: block;
     width: 310px;
     font-weight: 700;
     margin: 8px 0px;
 }
-
-.font-alphabet {
-    display: block;
-    font-family: ;
-    text-decoration: none;
-    font-style: normal;
-    margin: 8px 0px;
-}
-
 .f-description {
     display: block;
     list-style: none;
