@@ -67,6 +67,15 @@ p {
 a {
     text-decoration: none;
 }
+a:hover {
+    opacity: 0.6;
+}
+a:visited {
+    color: rgb(10, 26, 39);
+}
+a:active {
+    opacity: 0.8;
+}
 /*Colors*/
 .white {
     color: rgb(243, 244, 246);
@@ -122,11 +131,32 @@ a {
     background-color: #808e9b;
     color: #f5f5f5;
 }
+/* Grid Elements */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 50vh;
+}
+.two-col-image {
+    grid-column: span 6;
+    grid-row: 1/span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.two-col-word {
+    grid-column: span 6;
+    grid-row: 1/span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* Top Navigation Styling*/
 menu.nav {
     height: 68px;
     width: 100%;
-    /*border-bottom: 1px solid #44515a;*/
     position: fixed;
     background-color: rgb(243, 244, 246);
     color: rgb(10, 26, 39);
@@ -134,7 +164,6 @@ menu.nav {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    /*padding: 0 20px;*/
     box-sizing: border-box;
 }
 .nav-container {
@@ -170,45 +199,15 @@ menu.nav {
     opacity: 0.6;
 }
 
-/*Header On-Grid, Responsive*/
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 50vh;
+/* Header Section Styling */
+.top {
     padding-top: 74px;
 }
-.header-left {
-    grid-column: span 6;
-    grid-row: 1/span 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.headimage {
     background-color: rgb(92, 134, 156);
 }
-.header-right {
-    grid-column: span 6;
-    grid-row: 1/span 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.headword {
     background-color: rgb(186, 200, 211);
-}
-/* Media query for smaller screens*/
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column*/
-        grid-template-rows: auto; /* Automatically adjust row height*/
-        height: auto; /* Adjust height*/
-    }
-
-    .header-left,
-    .header-right {
-        grid-column: span 1; /* Each header takes up the full width*/
-        grid-row: auto; /* Automatically adjust row position*/
-        height: auto; /* Adjust height*/
-    }
 }
 .hr1 {
     display: flex;
@@ -230,43 +229,20 @@ menu.nav {
     align-content: center;
     text-align: center;
 }
-/*SOME KIND OF COOL GRAPH GOES HERE*/
-/*.headfig {
-    background-color: rgb(92, 134, 156);
-}*/
 
-
-/* Projects Section Styling*/
-.project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    box-sizing: border-box;
+/* Projects Section Styling */
+.short {
+    height: 42vh;
 }
 .project-mini {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: span 4;
+    grid-row: span 3;
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 244, 246); /* Add background color for visualization */
-    /*height: 150px; /* Fixed height for visualization */
+    background-color: rgb(243, 244, 246);
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-}
-/* Media query for smaller screens*/
-@media (max-width: 768px) {
-    .project-container {
-        grid-template-columns: 1fr; /* Single column*/
-        grid-template-rows: auto; /* Automatically adjust row height*/
-        height: auto; /* Adjust height*/
-    }
-
-    .project-mini {
-        grid-column: span 1; /* Each header takes up the full width*/
-        grid-row: auto; /* Automatically adjust row position*/
-        height: auto; /* Adjust height*/
-    }
 }
 .circle {
     display: block;
@@ -285,17 +261,8 @@ menu.nav {
 .project3 {
     background-color: rgb(133, 160, 179);
 }
-a:hover {
-    opacity: 0.6;
-}
-a:visited {
-    color: rgb(10, 26, 39);
-}
-a:active {
-    opacity: 0.8;
-}
 
-/* Proficiency Section*/
+/* Proficiency Section Styling*/
 /*.proficiency-container,
 .closing-container {
     width: 100%;
@@ -304,15 +271,25 @@ a:active {
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: scroll;
-    /*position: relative;*/
-/*}
-.proficiency-left {
+}*/
+#prof-1 {
+    grid-column: span 5;
+    grid-row: 1/span 3;
     display: inline-flex;
     flex-direction: column;
     background-color: rgb(92, 134, 156);
-    height: 40vw;
-    width: 50%;
 }
+#prof-2 {
+    grid-column: span 1;
+    grid-row: 1/span 3;
+    display: inline-flex;
+    background-color: rgb(92, 134, 156);
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    text-align: center;
+    justify-content: center;
+}
+#prof-3 {}
 .pl1 {
     display: flex;
     justify-content: flex-start;
@@ -333,9 +310,7 @@ a:active {
     padding-left: 50px;
 }
 .proficiency-center {
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
-    text-align: center;
+
 }
 .proficiency-right {
     display: flex;
@@ -401,4 +376,19 @@ footer {
 
 footer p {
 
+}
+/* Media query for smaller screens*/
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column*/
+        grid-template-rows: auto; /* Automatically adjust row height*/
+        height: auto; /* Adjust height*/
+    }
+    .two-col-image,
+    .two-col-word,
+    .project-mini {
+        grid-column: span 1; /* Each header takes up the full width*/
+        grid-row: auto; /* Automatically adjust row position*/
+        height: auto; /* Adjust height*/
+    }
 }
