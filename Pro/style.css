@@ -139,6 +139,12 @@ a:active {
     grid-template-rows: repeat(3, 1fr);
     height: 50vh;
 }
+.short {
+    height: 48vh;
+}
+.shorter {
+    height: 42vh;
+}
 .two-col-image {
     grid-column: span 6;
     grid-row: 1/span 3;
@@ -232,13 +238,6 @@ menu.nav {
 }
 
 /* Projects Section Styling */
-.short {
-    height: 48vh;
-}
-.shorter {
-    height: 42vh;
-}
-
 .project-mini {
     grid-column: span 4;
     grid-row: span 3;
@@ -274,6 +273,7 @@ menu.nav {
     display: flex;
     flex-direction: column;
     background-color: rgb(92, 134, 156);
+    box-sizing: border-box;
 }
 #prof-2 {
     grid-column: span 1;
@@ -284,6 +284,7 @@ menu.nav {
     writing-mode: vertical-lr;
     text-align: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 #prof-3 {
     grid-column: span 6;
@@ -291,6 +292,7 @@ menu.nav {
     display: flex;
     flex-direction: column;
     background-color: rgb(92, 134, 156);
+    box-sizing: border-box;
 }
 .pl1 {
     display: flex;
@@ -298,6 +300,7 @@ menu.nav {
     align-content: flex-start;
     padding-left: 50px;
     margin-top: 50px;
+    box-sizing: border-box;
 }
 .pl2,
 .pl3 {
@@ -305,6 +308,7 @@ menu.nav {
     justify-content: flex-start;
     align-content: flex-start;
     padding-left: 50px;
+    box-sizing: border-box;
 }
 .prof-list {
     display: flex;
@@ -315,6 +319,7 @@ menu.nav {
     height: 5.71vw;
     align-items: center;
     padding-left: 50px;
+    box-sizing: border-box;
 }
 .prof-list-end {
     display: flex;
@@ -325,6 +330,7 @@ menu.nav {
     height: 5.71vw;
     align-items: center;
     padding-left: 50px;
+    box-sizing: border-box;
 }
 
 /* Closing Section Styling*/
@@ -359,13 +365,17 @@ menu.nav {
     grid-row: 1/span 3;
     list-style: none;
     line-height: 3.5;
-    /*display: flex;
-    align-items: center;*/
+    display: flex;
 }
 .form1 {
     grid-column: span 6;
     grid-row: 1/span 3;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
 }
 .email {
 
@@ -379,10 +389,6 @@ menu.nav {
     font-size: 18px;
     text-transform: uppercase;
 }
-
-
-
-
 .shortest {
     height: 12vh;
 }
