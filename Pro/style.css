@@ -14,6 +14,8 @@ h2 {
     font-weight: bolder;
     font-size: 1.5em;
     color: rgb(92, 134, 156);
+    margin-bottom: 9px;
+    margin-top: 9px;
 }
 /*Uses: Just for Project Titles
 Lt Blue Grey on white.*/
@@ -31,10 +33,36 @@ h4 {
     font-size: 14px;
     font-weight: bold;
     color: rgb(10, 26, 39);
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.h4-white {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(243, 244, 246);
+}
+.h2-white {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(243, 244, 246);
+    margin-bottom: 9px;
+    margin-top: 9px;
 }
 p {
     font-family: "Montserrat", sans-serif;
     line-height: 2;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.p-white {
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
+    color: rgb(243, 244, 246);
+    padding-left: 50px;
+    margin-bottom: 9px;
 }
 a {
     text-decoration: none;
@@ -171,7 +199,7 @@ menu.nav {
     align-items: flex-end;
     align-content: center;
     text-align: center;
-    margin: auto;
+    margin-top: 90px;
 }
 .hr2 {
     display: flex;
@@ -187,7 +215,7 @@ menu.nav {
     align-items: flex-start;
     align-content: center;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
 }
 /*SOME KIND OF COOL GRAPH GOES HERE*/
 /*.headfig {
@@ -239,7 +267,8 @@ a:visited {
 a:active {
     opacity: 0.8;
 }
-.proficiency-container {
+.proficiency-container,
+.closing-container {
     width: 100%;
     height: 40vw;
     display: flex;
@@ -249,39 +278,34 @@ a:active {
 }
 .proficiency-left {
     display: inline-flex;
-    align-items: center;
-    text-align: left;
-    /*background-color: rgb(92, 134, 156);*/
-    color: rgb(243, 244, 246);
+    flex-direction: column;
+    background-color: rgb(92, 134, 156);
     height: 40vw;
     width: 50%;
 }
-div.pl2 {
-    color: rgb(243, 244, 246);
-}
 .pl1 {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    align-content: center;
-    text-align: center;
-    margin: auto;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 50px;
+    margin-top: 50px;
 }
 .pl2 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin: 0;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 50px;
 }
 .pl3 {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 50px;
+}
+.proficiency-center {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
     text-align: center;
-    margin: auto;
 }
 .proficiency-right {
     display: flex;
@@ -289,7 +313,55 @@ div.pl2 {
     background-color: rgb(92, 134, 156);
     height: 40vw;
     width: 50%;
+    align-items: stretch;
+    /*align-content: center;*/
 }
+.prof-list {
+    display: flex;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #f3f4f6;
+    border-left: 2px solid #f3f4f6;
+    height: 5.71vw;
+    align-items: center;
+    padding-left: 50px;
+}
+.closing-left {
+    display: flex;
+    background-color: rgb(133, 160, 179);
+    height: 40vw;
+    width: 25%;
+}
+.closing-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(186, 200, 211);
+    height: 40vw;
+    width: 75%;
+}
+.cr1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.cr2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.cr3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+/*.image img {
+    position: relative;
+    top: 70px;
+}*/
 
 menu.skills {
 
