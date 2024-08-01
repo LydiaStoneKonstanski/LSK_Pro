@@ -497,7 +497,12 @@ footer p {
     #prof-1,
     #prof-3,
     .quarter-col,
-    .three-quarter-col {
+    .three-quarter-col,
+    .footer-menu,
+    .form1,
+    .btn-top,
+    .skills-menu,
+    .cpy-right {
         grid-column: span 1; /* Each header takes up the full width*/
         grid-row: auto; /* Automatically adjust row position*/
         height: auto; /* Adjust height*/
