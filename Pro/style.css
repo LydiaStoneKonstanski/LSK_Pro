@@ -81,20 +81,38 @@ a:active {
 .white {
     color: rgb(243, 244, 246);
 }
+.b-white {
+    background-color: rgb(243, 244, 246);
+}
 .dk-navy {
     color: rgb(10, 57, 72);
+}
+.b-dk-navy {
+    background-color: rgb(10, 57, 72);
 }
 .dk-grey {
     color: rgb(68, 81, 90);
 }
+.b-dk-grey {
+    background-color: rgb(68, 81, 90);
+}
 .lt-grey {
     color: rgb(186, 200, 211);
+}
+.b-lt-grey {
+    background-color: rgb(186, 200, 211);
 }
 .lt-blue-grey {
     color: rgb(133, 160, 179);
 }
+.b-lt-blue-grey {
+    background-color: rgb(133, 160, 179);
+}
 .dk-blue-grey {
     color: rgb(92, 134, 156);
+}
+.b-dk-blue-grey {
+    background-color: rgb(92, 134, 156);
 }
 /* Buttons*/
 .btn-primary {
@@ -126,7 +144,6 @@ a:active {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-
 }
 .btn-top {
     background-color: rgb(243, 244, 246);
@@ -180,6 +197,8 @@ btn-icon:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+.tall {
     height: 50vh;
 }
 .short {
@@ -257,7 +276,7 @@ menu.nav {
 
 /* Header Section Styling */
 .top {
-    padding-top: 74px;
+    padding-top: 68px;
 }
 .headimage {
     background-color: rgb(92, 134, 156);
@@ -497,10 +516,6 @@ div.form1 a {
     align-items: flex-start;
     box-sizing: border-box;
 }
-.top {
-    padding: 0;
-    border: 1px solid #44515a;
-}
 /*.layer-image {
     z-index: 2;
     grid-column-start: 2.5;
@@ -559,17 +574,34 @@ div.form1 a {
     /*justify-content: space-between;*/
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
     box-sizing: border-box;
     z-index: 99;
     border-bottom: 1px dashed #11557C;
 }
-/*.nav-container {
+.simp-container {
     display: flex;
     height: 68px;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
     background-color: rgb(243, 244, 246);
-    overflow: auto;
-}*/
+}
+
+/* Resume Header */
+.full-width {
+    display: flex;
+    grid-column: span 12;
+    grid-row: 1/span 3;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+}
+.center-block {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
