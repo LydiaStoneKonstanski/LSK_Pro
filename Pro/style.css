@@ -125,6 +125,17 @@ a:active {
     font-size: 20px;
     cursor: pointer;
 }
+.btn-top {
+    background-color: rgb(243, 244, 246);
+    color: rgb(10, 26, 39);
+    border: 1px solid #0a1a27;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 80px;
+
+}
 .btn:hover {
     opacity: 0.6;
 }
@@ -140,10 +151,16 @@ a:active {
     height: 50vh;
 }
 .short {
-    height: 48vh;
+    height: 45vh;
 }
 .shorter {
     height: 42vh;
+}
+.shorter2 {
+    height: 40vh;
+}
+.shortest {
+    height: 12vh;
 }
 .two-col-image {
     grid-column: span 6;
@@ -360,11 +377,10 @@ menu.nav {
 
 /* Footer Menu */
 .footer-menu {
-    grid-column: span 12;
-    /*grid-column: span 3;*/
+    grid-column: span 3;
     grid-row: 1/span 3;
     list-style: none;
-    line-height: 3.5;
+    line-height: 3.4;
     display: flex;
 }
 .form1 {
@@ -372,25 +388,24 @@ menu.nav {
     grid-row: 1/span 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
-    margin: 0;
+    margin: 20px;
+    box-sizing: border-box;
 }
-.email {
-
+form {
 }
 .skills-menu {
     grid-column: span 3;
     grid-row: 1/span 3;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-}
-.shortest {
-    height: 12vh;
+    list-style: none;
+    line-height: 3.5;
 }
 .cpy-right {
     grid-column: span 12;
@@ -398,6 +413,15 @@ menu.nav {
     display: flex;
     background-color: rgb(186, 200, 211);
     /*background-color: rgb(243, 244, 246);*/
+}
+div.form1 a {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+}
+.top {
+    padding: 0;
+    /*margin-top: 80px;*/
 }
 /*.layer-image {
     z-index: 2;
