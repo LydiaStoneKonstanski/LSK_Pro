@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(243, 244, 246);
-    color: rgb(10, 26, 39);
+    color: rgb(10, 26, 39) !important;
 }
 /*General Styling*/
 
@@ -64,17 +64,17 @@ p {
     padding-left: 50px;
     margin-bottom: 9px;
 }
-a {
+a:link {
     text-decoration: none;
-}
-a:hover {
-    opacity: 0.6;
 }
 a:visited {
     color: rgb(10, 26, 39);
 }
+a:hover {
+    opacity: 0.6;
+}
 a:active {
-    color: rgb(10, 26, 39);
+    color: rgb(68, 81, 90);
     opacity: 0.8;
 }
 /*Colors*/
@@ -82,7 +82,7 @@ a:active {
     color: rgb(243, 244, 246);
 }
 .dk-navy {
-    color: rgb(10, 26, 39);
+    color: rgb(10, 57, 72);
 }
 .dk-grey {
     color: rgb(68, 81, 90);
@@ -183,12 +183,12 @@ menu.nav {
     width: 100%;
     position: fixed;
     background-color: rgb(243, 244, 246);
-    color: rgb(10, 26, 39);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     box-sizing: border-box;
+    z-index: 99;
 }
 .nav-container {
     display: flex;
@@ -196,7 +196,6 @@ menu.nav {
     width: 100%;
     align-items: center;
     background-color: rgb(243, 244, 246);
-    color: rgb(10, 26, 39);
     overflow: auto;
 }
 .navbar-logo {
@@ -382,6 +381,7 @@ menu.nav {
     list-style: none;
     line-height: 3.4;
     display: flex;
+    color: rgb(10, 26, 39);
 }
 .form1 {
     grid-column: span 6;
@@ -393,6 +393,7 @@ menu.nav {
     align-content: center;
     margin: 20px;
     box-sizing: border-box;
+    color: rgb(10, 26, 39);
 }
 form {
 }
@@ -403,6 +404,7 @@ form {
     flex-direction: column;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
+    color: rgb(10, 26, 39);
     text-transform: uppercase;
     list-style: none;
     line-height: 3.5;
