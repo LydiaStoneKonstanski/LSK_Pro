@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(243, 244, 246);
-    color: rgb(10, 26, 39) !important;
+    color: rgb(68, 81, 90); !important;
 }
 /*General Styling*/
 
@@ -32,7 +32,7 @@ h4 {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    color: rgb(10, 26, 39);
+    color: rgb(68, 81, 90);
     margin-bottom: 9px;
     margin-top: 9px;
 }
@@ -68,7 +68,7 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    color: rgb(10, 26, 39);
+    color: rgb(68, 81, 90);
 }
 a:hover {
     opacity: 0.6;
@@ -138,6 +138,10 @@ a:active {
 }
 .btn:hover {
     opacity: 0.6;
+    background-color: rgb(186, 200, 211);
+}
+.btn-top:hover {
+    background-color: rgb(186, 200, 211);
 }
 .snippet {
     background-color: #808e9b;
@@ -409,11 +413,31 @@ form {
     list-style: none;
     line-height: 3.5;
 }
-.cpy-right {
+.foot {
     grid-column: span 12;
     grid-row: 1/span 3;
-    display: flex;
+    padding-left: 40px;
     background-color: rgb(186, 200, 211);
+    justify-content: flex-start;
+    align-items: center;
+}
+.cpy-right {
+    grid-column: span 4;
+    grid-row: 1/span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*background-color: rgb(243, 244, 246);*/
+}
+.attribution {
+    grid-column: span 4;
+    grid-row: 1/span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
     /*background-color: rgb(243, 244, 246);*/
 }
 div.form1 a {
