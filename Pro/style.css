@@ -605,6 +605,7 @@ div.form1 a {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
     padding-top: 108px;
+    height: 60vh;
 }
 .p-resume {
     font-family: "Montserrat", sans-serif;
@@ -621,5 +622,17 @@ div.form1 a {
 }
 .top2 {
     padding-top: 108px;
+}
+.two-col-resume {
+    grid-column: span 6;
+    grid-row: 1/span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(92, 134, 156);
+    color: rgb(243, 244, 246);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
