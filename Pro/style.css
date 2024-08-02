@@ -17,6 +17,20 @@ h2 {
     margin-bottom: 9px;
     margin-top: 9px;
 }
+.h1-alt {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5em;
+    color: rgb(243, 244, 246);
+    text-transform: uppercase;
+}
+.h2-white {
+    font-family: "Young Serif", serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(243, 244, 246);
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
 /*Uses: Just for Project Titles
 Lt Blue Grey on white.*/
 h3 {
@@ -42,14 +56,6 @@ h4 {
     font-size: 14px;
     font-weight: bold;
     color: rgb(243, 244, 246);
-}
-.h2-white {
-    font-family: "Young Serif", serif;
-    font-weight: bolder;
-    font-size: 1.5em;
-    color: rgb(243, 244, 246);
-    margin-bottom: 9px;
-    margin-top: 9px;
 }
 p {
     font-family: "Montserrat", sans-serif;
@@ -182,6 +188,11 @@ a:active {
 
     /* Support for IE. */
     font-feature-settings: 'liga';
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    opacity: 0.6;
+    background-color: rgb(186, 200, 211);
 }
 .btn:hover,
 .btn:focus {
@@ -591,7 +602,6 @@ div.form1 a {
     padding: 0 0 0 10px;
     box-sizing: border-box;
     z-index: 99;
-    border-bottom: 1px dashed #11557C;
 }
 .simp-container {
     display: flex;
@@ -612,7 +622,12 @@ div.form1 a {
     background-color: rgb(68, 81, 90);
     color: rgb(243, 244, 246);
     box-sizing: border-box;
+    border: 1px dashed #11557C;
     text-align: center;
+}
+.ribbon:hover,
+.ribbon:focus {
+    background-color: #0a1a27;
 }
 .resume-container {
     display: grid;
@@ -700,6 +715,12 @@ div.form1 a {
     z-index: 1;
 }
 /* Link styling inside the dropdown menu*/
+.dropdown-content p {
+    font-family: Montserrat, sans-serif;
+    color: rgb(68, 81, 90);
+    padding: 20px;
+    display: block;
+}
 .dropdown-content a {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
@@ -725,26 +746,88 @@ div.form1 a {
 }
 .long-resume-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 3fr;/* Two columns with the second column being three times the size of the first */
     padding-top: 108px;
     box-sizing: border-box;
 }
 .mini-col {
-    grid-column: span 3;
+    grid-column: span 1;
     display: flex;
     flex-direction: column;
     background-color: rgb(186, 200, 211);
+    box-sizing: border-box;
 }
 .avatar {
     background-image: url("Pro/static/portrait.jpeg");
-    border: 1 px solid #0a1a27;
+    border: 1px solid #0a1a27;
 }
 .res-sidebar {
-    grid-column: span 3;
+    grid-column: span 1;
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    padding-bottom: 40px;
     font-family: Montserrat, sans-serif;
     font-size: 12px;
+    box-sizing: border-box;
 }
+.res-main-container {
+    grid-column: span 1;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    /*padding: 20px;*/
+    box-sizing: border-box;
+}
+.res-name {
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(92, 134, 156);
+    height: 30vh;
+    box-sizing: border-box;
+}
+.ctr {
+    grid-column: span 1;
+    display: flex;
+    margin: 15px;
+    /*padding-left: 40px*/
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.res-quality-container {
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.quality-mini {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.res-qual {
+    grid-column: span 1;
+    display: flex;
+    padding: 10px 0 0 40px;
+    align-items: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px
+}
+.read-more-container {
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.read-more-qual {
+
+}
+
+
