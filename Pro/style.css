@@ -641,13 +641,16 @@ div.form1 a {
     grid-column: span 6;
     grid-row: 1/span 3;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(92, 134, 156);
     color: rgb(243, 244, 246);
     padding: 20px;
     box-sizing: border-box;
+    background-image: url("Pro/static/Triangles.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .tech-container {
     display: grid;
@@ -717,5 +720,31 @@ div.form1 a {
 .show {
     display: block;
 }
-
-
+.hvy-pad {
+    padding: 20px 80px;
+}
+.long-resume-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-top: 108px;
+    box-sizing: border-box;
+}
+.mini-col {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(186, 200, 211);
+}
+.avatar {
+    background-image: url("Pro/static/portrait.jpeg");
+    border: 1 px solid #0a1a27;
+}
+.res-sidebar {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+}
