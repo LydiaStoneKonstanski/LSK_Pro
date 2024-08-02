@@ -635,4 +635,33 @@ div.form1 a {
     padding: 20px;
     box-sizing: border-box;
 }
-
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    box-sizing: border-box;
+    /*flex-direction: column;*/
+}
+.tech {
+    grid-column: span 12;
+    grid-row: 2/span 1;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.skills-container {
+    grid-column: span 12;
+    grid-row: 1/span 1;
+    display: flex;
+    box-sizing: border-box;
+}
+.skills-mini {
+    grid-column: span 4;
+    grid-row: 1/span 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: left;
+}
