@@ -78,6 +78,12 @@ a:active {
     opacity: 0.8;
 }
 /*Colors*/
+.form-white {
+    color: #f1f1f1;
+}
+.b-form-white {
+    background-color: #f1f1f1;
+}
 .white {
     color: rgb(243, 244, 246);
 }
@@ -177,18 +183,22 @@ a:active {
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
     opacity: 0.6;
     background-color: rgb(186, 200, 211);
 }
-.btn-top:hover {
+.btn-top:hover,
+.btn-top:focus {
     background-color: rgb(186, 200, 211);
 }
-.btn-icon:hover {
+.btn-icon:hover,
+.btn-icon:focus {
     opacity: 0.6;
     background-color: rgb(186, 200, 211);
 }
-.material-symbols-outlined:hover {
+.material-symbols-outlined:hover,
+.material-symbols-outlined:focus {
     opacity: 0.6;
     background-color: rgb(133, 160, 179);
 }
@@ -669,12 +679,15 @@ div.form1 a {
     box-sizing: border-box;
     text-align: left;
 }
-/* W3 Schools Dropdown*/
-/* Their button is dropbtn, mine is called material-symbols-outlined*/
+/* Hamburger Dropdown*/
+/* Connects to .material-symbols-outlined in button area*/
+
+/* Container that positions the dropdown menu*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
+/* Dropdown content is hidden by default*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -683,6 +696,7 @@ div.form1 a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+/* Link styling inside the dropdown menu*/
 .dropdown-content a {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
@@ -691,9 +705,17 @@ div.form1 a {
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:hover {
+/* A little shadow on hover*/
+.dropdown-content a:hover,
+.dropdown-content a:focus {
     background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+
