@@ -7,176 +7,188 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="Pro/SimpleNav.js"></script>
 </head>
+
 <body>
 <!-- Header -->
     <header>
         <menu id="simplified-nav">
             <div class="simp-container">
                 <div class="dropdown">
-                    <button onclick="menuFunction()" class="material-symbols-outlined">menu</button>
-                    <div id="burgerDropdown" class="dropdown-content">
-                        <a href="./resume.html">Resume</a>
-                        <a href="./about.html">About</a>
-                        <a href="./projects.html">Projects</a>
-                        <a href="./blog.html">Blog</a>
-                    </div>
+                    <button onclick="menuFunction()" class="material-symbols-outlined">menu
+                    </button>
+                        <div id="burgerDropdown" class="dropdown-content">
+                            <a href="./resume.html">Resume</a>
+                            <a href="./about.html">About</a>
+                            <a href="./projects.html">Projects</a>
+                            <a href="./blog.html">Blog</a>
+                        </div>
                 </div>
-                <a class="navbar-logo" href="#"><img alt=" Logo for Lydia Stone Data Science & Engineering" title="Lydia Stone Data Science & Engineering" src=""></a>
-                <button class="btn-icon"><i class="fa fa-search"></i> Search</button>
+                <div>
+                    <a class="navbar-logo" href="#"><img alt=" Logo for Lydia Stone Data Science & Engineering" title="Lydia Stone Data Science & Engineering" src=""></a>
+                    <button class="btn-icon"><i class="fa fa-search"></i> Search</button>
+                </div>
             </div>
         </menu>
-    <div class="ribbon">
-        <a href="https://drive.google.com/file/d/1ys-LJUzOEB8EVZMMvrq2m_baY3FMgn7a/view?usp=sharing" ><p class="p-resume">Download PDF</p></a>
-    </div>
+        <div class="ribbon">
+            <a href="https://drive.google.com/file/d/1ys-LJUzOEB8EVZMMvrq2m_baY3FMgn7a/view?usp=sharing" ><p class="p-resume">Download PDF</p></a>
+        </div>
     </header>
-<!--Third resume design -->
-<section class="long-resume-container">
-    <div class="mini-col">
-        <div class="ctr">
-            <div class="circle avatar"></div>
-        </div>
-        <div class="res-sidebar">
-            <h2>Contacts</h2>
-            <h4>Email</h4>
-            <a href="lydia.artofdata@gmail.com" target="_blank">lydia.artofdata@gmail.com</a>
-            <br>
-            <h4>Phone</h4>
-            <p>(210) 863-1593</p>
-            <br>
-            <h4>Website</h4>
-            <a href="#" target="_blank">lydiastone.com</a>
-            <br>
-            <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/lydia-stone-konstanski/" target="_blank">LinkedIn: /lydia-stone-konstanski</a>
-            <br>
-            <h4>GitHub</h4>
-            <a href="https://github.com/LydiaStoneKonstanski" target="_blank">GitHub: /LydiaStoneKonstanski</a>
-            <br>
-        </div>
-    </div>
-
-    <div class="res-main-container">
-        <div class="res-name">
-            <h1 class="h1-alt">Lydia Stone</h1>
-        </div>
-
-        <div class="res-qual">
-            <div class="quality-mini">Qualities</div>
-        </div>
-
-        <div class="res-quality-container">
-
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">handshake</i><p>TEAM-ORIENTED</p><br>
-                <i class="material-symbols-outlined">troubleshoot</i><p>ANALYTICAL</p><br>
+    <!--Third resume design -->
+    <section class="long-resume-container">
+        <!--Left Side Column -->
+        <div class="mini-col">
+            <!--Top of Left Column -->
+            <div class="ctr">
+                <div id="avatar" class="circle">
+                </div>
             </div>
-
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">trending_up</i><p>TENACIOUS</p><br>
-                <i class="material-symbols-outlined">phone</i><p>COMMUNICATIVE</p><br>
-            </div>
-
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">settings_heart</i><p>HARD-WORKING</p><br>
-                <i class="material-symbols-outlined">lightbulb</i><p>CREATIVE</p>
+            <!--Contacts In Left Side Column -->
+            <div class="res-sidebar">
+                <h2>Contacts</h2>
+                <h4>Email</h4>
+                <a href="lydia.artofdata@gmail.com" target="_blank">lydia.artofdata@gmail.com</a>
+                <br>
+                <h4>Phone</h4>
+                <p>(210) 863-1593</p>
+                <br>
+                <h4>Website</h4>
+                <a href="#" target="_blank">lydiastone.com</a>
+                <br>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/lydia-stone-konstanski/" target="_blank">LinkedIn: /lydia-stone-konstanski</a>
+                <br>
+                <h4>GitHub</h4>
+                <a href="https://github.com/LydiaStoneKonstanski" target="_blank">GitHub: /LydiaStoneKonstanski</a>
+                <br>
             </div>
         </div>
-        <div class="read-more-container">
-            <div class="dropdown">
-                <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
-                <div id="read-more-qual" class="dropdown-content">
-                    <p>Data Engineer with a background in Project Management, Production Administration, and Education within
-                        the textile and design industries.<br><br> Consulted with manufacturing, consumer service, and textile production
-                        companies to optimize processes, enhance efficiency, and reduce costs by utilizing data-driven insights to
-                        facilitate decision-making.<br><br>Eager to contribute creative vision, tenacity, and analytical problem-solving
-                        abilities to develop innovative data engineering solutions within a high-performing team.</p>
-        </div>
-        <div class="res-qual ctr">
-            <p>-------------------------------------------------------------------------------------</p>
-        </div>
+        <!--^End of Left Column -->
 
-        <div class="res-qual">
-            <div class="quality-mini">TECH STACK</div>
-        </div>
-
-        <div class="res-quality-container">
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">check_circle</i><p>PYTHON</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>PANDAS/NUMPY</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>GOOGLE CLOUD</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>JUPYTER LAB</p><br>
-
+        <!--Beginning of Right Column -->
+        <div class="res-main-container">
+            <!--Top of Right Column, Name -->
+            <div class="res-name">
+                <h1 class="h1-alt">Lydia Stone</h1>
             </div>
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">check_circle</i><p>GIT/GITHUB</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>FLASK</p>
-                <i class="material-symbols-outlined">check_circle</i><p>APACHE SPARK</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>DATA BRICKS</p><br>
+            <!--Container for Qualities Title -->
+            <div class="res-qual">
+                <div class="quality-mini">Qualities</div>
             </div>
-            <div class="quality-mini">
-                <i class="material-symbols-outlined">check_circle</i><p>ADOBE; PS, LR, IL</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>SQL</p><br>
-                <i class="material-symbols-outlined">check_circle</i><p>KAFKA</p>
-                <i class="material-symbols-outlined">check_circle</i><p>DOCKER</p><br>
+            <!--Container with 3 columns -->
+            <div class="res-quality-container">
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">handshake</i><p>TEAM-ORIENTED</p><br>
+                    <i class="material-symbols-outlined">troubleshoot</i><p>ANALYTICAL</p><br>
+                </div>
+
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">trending_up</i><p>TENACIOUS</p><br>
+                    <i class="material-symbols-outlined">phone</i><p>COMMUNICATIVE</p><br>
+                </div>
+
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">settings_heart</i><p>HARD-WORKING</p><br>
+                    <i class="material-symbols-outlined">lightbulb</i><p>CREATIVE</p>
+                </div>
             </div>
+            <!--Container with Qualities "Read More" Button  -->
+            <div class="read-more-container">
+                <div class="dropdown">
+                    <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
+                    <div id="read-more-qual" class="dropdown-content">
+                        <p>Data Engineer with a background in Project Management, Production Administration, and Education within
+                            the textile and design industries.<br><br> Consulted with manufacturing, consumer service, and textile production
+                            companies to optimize processes, enhance efficiency, and reduce costs by utilizing data-driven insights to
+                            facilitate decision-making.<br><br>Eager to contribute creative vision, tenacity, and analytical problem-solving
+                            abilities to develop innovative data engineering solutions within a high-performing team.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Dividing line Ending Qualities Section -->
+            <div class="res-qual ctr">
+                <p>-------------------------------------------------------------------------------------</p>
+            </div>
+            <!--Beginning of Tech Stack Area with title-->
+            <div class="res-qual">
+                <div class="quality-mini">TECH STACK</div>
+            </div>
+            <!--Three tech columns -->
+            <div class="res-quality-container">
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">check_circle</i><p>PYTHON</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>PANDAS/NUMPY</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>GOOGLE CLOUD</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>JUPYTER LAB</p><br>
+                </div>
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">check_circle</i><p>GIT/GITHUB</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>FLASK</p>
+                    <i class="material-symbols-outlined">check_circle</i><p>APACHE SPARK</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>DATA BRICKS</p><br>
+                </div>
+                <div class="quality-mini">
+                    <i class="material-symbols-outlined">check_circle</i><p>ADOBE; PS, LR, IL</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>SQL</p><br>
+                    <i class="material-symbols-outlined">check_circle</i><p>KAFKA</p>
+                    <i class="material-symbols-outlined">check_circle</i><p>DOCKER</p><br>
+                </div>
+            </div>
+            <!--End of Tech Stack Container, dividing line -->
+            <div class="res-qual">
+                <p>-------------------------------------------------------------------------------------</p>
+            </div>
+        <!--v End of Main Container -->
+        </div>
+    </section>
 
+    <!-- Second Resume Design -->
+    <!--<section class="resume-container">
+        <div class="two-col-word headword">
+            <h1 class="center-block">Lydia Stone</h1><br>
+            <h4 class="center-block">Data Engineer</h4><br>
+            <p class="center-block">Wilmington, DE | (210) 863-1593 <a href="lydia.artofdata@gmail.com" target="_blank">lydia.artofdata@gmail.com</a><a href="https://www.linkedin.com/in/lydia-stone-konstanski/" target="_blank">LinkedIn: /lydia-stone-konstanski</a><a href="https://github.com/LydiaStoneKonstanski" target="_blank">GitHub: /LydiaStoneKonstanski</a></p>
         </div>
-
-        <div class="res-qual">
-            <p>-------------------------------------------------------------------------------------</p>
+        <div class="two-col-resume">
         </div>
-    </div>
-
-</section>
-
-<!-- Second Resume Design -->
-<section class="resume-container">
-    <div class="two-col-word headword">
-        <h1 class="center-block">Lydia Stone</h1><br>
-        <h4 class="center-block">Data Engineer</h4><br>
-        <p class="center-block">Wilmington, DE | (210) 863-1593 <a href="lydia.artofdata@gmail.com" target="_blank">lydia.artofdata@gmail.com</a><a href="https://www.linkedin.com/in/lydia-stone-konstanski/" target="_blank">LinkedIn: /lydia-stone-konstanski</a><a href="https://github.com/LydiaStoneKonstanski" target="_blank">GitHub: /LydiaStoneKonstanski</a></p>
-    </div>
-    <div class="two-col-resume">
-    </div>
-</section>
-<section>
-    <div class="grid-container">
-        <div class="foot hvy-pad">
-           <p>Data Engineer with a background in Project Management, Production Administration, and Education within
-               the textile and design industries. Consulted with manufacturing, consumer service, and textile production
-               companies to optimize processes, enhance efficiency, and reduce costs by utilizing data-driven insights to
-               facilitate decision-making. Eager to contribute creative vision, tenacity, and analytical problem-solving
-               abilities to develop innovative data engineering solutions within a high-performing team.
-           </p>
+    </section>
+    <section>
+        <div class="grid-container">
+            <div class="foot hvy-pad">
+               <p>Data Engineer with a background in Project Management, Production Administration, and Education within
+                   the textile and design industries. Consulted with manufacturing, consumer service, and textile production
+                   companies to optimize processes, enhance efficiency, and reduce costs by utilizing data-driven insights to
+                   facilitate decision-making. Eager to contribute creative vision, tenacity, and analytical problem-solving
+                   abilities to develop innovative data engineering solutions within a high-performing team.
+               </p>
+            </div>
         </div>
-    </div>
-</section>
-<!-- Tech Skills Section -->
-<section class="tech-container shorter">
-    <div class="tech">
-        <h4>Technical Skills</h4>
-    </div>-->
-    <div class="skills-container">
-        <div class="skills-mini">
-            <ul><li>Python</li>
-                <li>Pandas/Numpy</li>
-            </ul>
+    </section>-->
+    <!-- Tech Skills Section -->
+    <!--<section class="tech-container shorter">
+        <div class="tech">
+            <h4>Technical Skills</h4>
+        </div>-->
+        <!--<div class="skills-container">
+            <div class="skills-mini">
+                <ul><li>Python</li>
+                    <li>Pandas/Numpy</li>
+                </ul>
+            </div>
+            <div class="skills-mini">
+                <ul><li>Git, GitHub</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+            <div class="skills-mini">
+                <ul><li>Adobe; Photoshop, Lightroom, Illustrator</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
         </div>
-        <div class="skills-mini">
-            <ul><li>Git, GitHub</li>
-                <li>Flask</li>
-            </ul>
-        </div>
-        <div class="skills-mini">
-            <ul><li>Adobe; Photoshop, Lightroom, Illustrator</li>
-                <li>SQL</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>-->
 <!--<a href ="Document URL" attributes-list download > Download as PDF </a>-->
-
+    <script src="SimpleNav.js"></script>
+    <script src="readMore.js"></script>
 </body>
 </html>

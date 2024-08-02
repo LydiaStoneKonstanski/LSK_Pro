@@ -734,9 +734,9 @@ div.form1 a {
 .dropdown-content a:focus {
     background-color: #ddd;
 }
-.dropdown:hover .dropdown-content {
+/*.dropdown:hover .dropdown-content {
     display: block;
-}
+}*/
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
@@ -757,9 +757,12 @@ div.form1 a {
     background-color: rgb(186, 200, 211);
     box-sizing: border-box;
 }
-.avatar {
-    background-image: url("Pro/static/portrait.jpeg");
-    border: 1px solid #0a1a27;
+#avatar {
+    position: relative;
+    background-image: url("./static/portrait.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .res-sidebar {
     grid-column: span 1;
@@ -825,9 +828,6 @@ div.form1 a {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-}
-.read-more-qual {
-
 }
 
 
