@@ -624,6 +624,7 @@ div.form1 a {
     box-sizing: border-box;
     border: 1px dashed #11557C;
     text-align: center;
+    z-index: 50;
 }
 .ribbon:hover,
 .ribbon:focus {
@@ -702,7 +703,7 @@ div.form1 a {
 
 /* Container that positions the dropdown menu*/
 .dropdown {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
 }
 /* Dropdown content is hidden by default*/
@@ -714,8 +715,19 @@ div.form1 a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+.dropdown-content-two {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*vertical-align: middle;
+    width: 50%;
+    margin-left: auto; !important;
+    margin-right: auto; !important;*/
+}
 /* Link styling inside the dropdown menu*/
-.dropdown-content p {
+.dropdown-content-two p {
     font-family: Montserrat, sans-serif;
     color: rgb(68, 81, 90);
     padding: 20px;
@@ -734,9 +746,16 @@ div.form1 a {
 .dropdown-content a:focus {
     background-color: #ddd;
 }
-/*.dropdown:hover .dropdown-content {
+.dropdown-content-two a:hover,
+.dropdown-content-two a:focus {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
     display: block;
-}*/
+}
+.dropdown:hover .dropdown-content-two {
+    display: block;
+}
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
