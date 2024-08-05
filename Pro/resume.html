@@ -15,7 +15,8 @@
         <menu id="simplified-nav">
             <div class="simp-container">
                 <div class="dropdown">
-                    <button onclick="menuFunction()" class="material-symbols-outlined">menu
+                    <button onclick="menuFunction()" class="btn-icon">
+                            <span class="material-symbols-outlined">menu</span>
                     </button>
                         <div id="burgerDropdown" class="dropdown-content">
                             <a href="./index.html">Home</a>
@@ -66,17 +67,17 @@
         </div>
         <!--^End of Left Column -->
 
-        <!--Beginning of Right Column -->
+        <!--Beginning of Right Column-->
         <div class="res-main-container">
             <!--Top of Right Column, Name -->
             <div class="res-name">
                 <h1 class="h1-alt">Lydia Stone</h1>
             </div>
-            <!--Container for Qualities Title -->
+            <!--Container for Qualities Title (TODO: MAKE ENTIRE CONTAINER CLICKABLE)-->
             <div class="res-qual">
                 <div class="quality-mini">Qualities</div>
             </div>
-            <!--Container with 3 columns -->
+            <!--Three Qualities columns -->
             <div class="res-quality-container">
                 <div class="quality-mini">
                     <i class="material-symbols-outlined">handshake</i><p>TEAM-ORIENTED</p><br>
@@ -93,7 +94,7 @@
                     <i class="material-symbols-outlined">lightbulb</i><p>CREATIVE</p>
                 </div>
             </div>
-            <!--Container with Qualities "Read More" Button  -->
+            <!--Container with Qualities "Read More" Button   -->
             <div class="read-more-container">
                 <div class="dropdown">
                     <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
@@ -107,38 +108,66 @@
                 </div>
             </div>
             <!--Dividing line Ending Qualities Section -->
-            <div class="res-qual ctr">
-                <p>-------------------------------------------------------------------------------------</p>
-            </div>
-            <!--Beginning of Tech Stack Area with title-->
+
+            <!--Beginning of Tech Stack Area with title  (TODO: MAKE ENTIRE CONTAINER CLICKABLE)-->
             <div class="res-qual">
-                <div class="quality-mini">TECH STACK</div>
+                <div class="quality-mini">Tech Stack</div>
             </div>
-            <!--Three tech columns -->
+            <!--Three Tech columns -->
             <div class="res-quality-container">
                 <div class="quality-mini">
-                    <i class="material-symbols-outlined">check_circle</i><p>PYTHON</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>PANDAS/NUMPY</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>GOOGLE CLOUD</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>JUPYTER LAB</p><br>
+                    <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>PYTHON</p></div>
+                        <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>PANDAS/NUMPY</p></div>
+                            <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>GOOGLE CLOUD</p></div>
+                                <div class="quality-mini"> <i class="material-symbols-outlined">check_circle</i><p>JUPYTER LAB</p></div>
                 </div>
+
                 <div class="quality-mini">
-                    <i class="material-symbols-outlined">check_circle</i><p>GIT/GITHUB</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>FLASK</p>
-                    <i class="material-symbols-outlined">check_circle</i><p>APACHE SPARK</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>DATA BRICKS</p><br>
+                    <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>GIT/GITHUB</p></div>
+                        <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>FLASK</p></div>
+                            <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>APACHE SPARK</p></div>
+                                <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>DATA BRICKS</p></div>
                 </div>
+
                 <div class="quality-mini">
-                    <i class="material-symbols-outlined">check_circle</i><p>ADOBE; PS, LR, IL</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>SQL</p><br>
-                    <i class="material-symbols-outlined">check_circle</i><p>KAFKA</p>
-                    <i class="material-symbols-outlined">check_circle</i><p>DOCKER</p><br>
+                    <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>ADOBE; PS, LR, IL</p></div>
+                        <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>SQL</p></div>
+                            <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>KAFKA</p></div>
+                                <div class="quality-mini"><i class="material-symbols-outlined">check_circle</i><p>DOCKER</p></div>
                 </div>
             </div>
+
+                <!--Container with Tech Stack "Read More" Button  -->
+                <div class="read-more-container">
+                    <div class="dropdown">
+                        <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
+                        <div id="read-more-tech" class="dropdown-content-two">
+                            <p>Zip Code Wilmington | Wilmington, DE Feb 2024
+                                –
+                                May 2024
+                                Data Engineer in Training
+                                Completed Zip Code Wilmington’s highly competitive, immersive, data engineering and analytics training
+                                program which accepts less than 9% of applicants. Engaged in over 1000 hours of data engineering lab
+                                exercises, research, instruction, and technical projects. Gained experience with Python and SQL along with
+                                various other data tools and frameworks. Worked in teams using Agile methodologies.
+                                Technical Projects:
+                                • BeatStream: As an Agile team of 3 built complete data pipeline for music streaming service
+                                simulation using Kafka and Spark to develop dynamic event generators and consumers. Utilized
+                                Google Cloud Storage, Big Query, and DBT for data transformation and predictive model training.
+                                Personally built 3 Python models and designed 3-tier Flask web app hosted on Docker for
+                                visualization and insights for real time music streaming, entertainment, and marketing sectors, as
+                                well as custom illustrations to present complex concepts in understandable and aesthetically
+                                pleasing ways. [Beatstream]
+                                • Visualizing CO2 Emissions: Created web application to visualize summary statistics on world co2
+                                emissions by country per capita designed to be intuitive, engaging, and informative. Sourced data via
+                                CSVs from Our World in Data and the World Bank. Leveraged Flask framework for back end and
+                                HTML/CSS, and JavaScript for frontend. Utilized Python NumPy, Pandas, and Jupyter Lab to derive
+                                conclusions and created custom illustrations with Adobe Illustrator. [Visualizing CO2 Emissions]</p>
+                        </div>
+                    </div>
+                </div>
             <!--End of Tech Stack Container, dividing line -->
-            <div class="res-qual">
-                <p>-------------------------------------------------------------------------------------</p>
-            </div>
+
         <!--v End of Main Container -->
         </div>
     </section>
