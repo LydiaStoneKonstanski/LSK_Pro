@@ -733,6 +733,17 @@ div.form1 a {
     min-width: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+.dropdown-content-three {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 60vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Montserrat, sans-serif;
+    color: rgb(68, 81, 90);
+    padding: 20px;
+}
 /* Link styling inside the dropdown menu*/
 .dropdown-content-two p {
     font-family: Montserrat, sans-serif;
@@ -757,12 +768,21 @@ div.form1 a {
 .dropdown-content-two a:focus {
     background-color: #ddd;
 }
+.dropdown-content-three a:hover,
+.dropdown-content-three a:focus {
+    background-color: #ddd;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown:hover .dropdown-content-two {
     display: block;
 }
+.dropdown:hover .dropdown-content-three {
+    display: block;
+}
+
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
