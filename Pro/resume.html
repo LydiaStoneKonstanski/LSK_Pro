@@ -15,7 +15,7 @@
         <menu id="simplified-nav">
             <div class="simp-container">
                 <div class="dropdown">
-                    <button onclick="menuFunction()" class="btn-icon">
+                    <button onclick="menuFunction()" class="btn-icon" data-target-id=s-nav>
                             <span class="material-symbols-outlined">menu</span>
                     </button>
                         <div id="burgerDropdown" class="dropdown-content">
@@ -75,7 +75,7 @@
             </div>
             <!--Container for Qualities Title (TODO: MAKE ENTIRE CONTAINER CLICKABLE)-->
             <div class="res-qual">
-                <div class="quality-mini">Qualities</div>
+                <div class="quality-mini"><h2 class="h2-sans">Qualities</h2></div>
             </div>
             <!--Three Qualities columns -->
             <div class="res-quality-container">
@@ -97,7 +97,7 @@
             <!--Container with Qualities "Read More" Button   -->
             <div class="read-more-container">
                 <div class="dropdown">
-                    <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
+                    <button onclick="readMoreFunction()" class="btn-secondary">READ MORE</button>
                     <div id="read-more-qual" class="dropdown-content-two">
                         <p>Data Engineer with a background in Project Management, Production Administration, and Education within
                             the textile and design industries.<br><br> Consulted with manufacturing, consumer service, and textile production
@@ -111,7 +111,7 @@
 
             <!--Beginning of Tech Stack Area with title  (TODO: MAKE ENTIRE CONTAINER CLICKABLE)-->
             <div class="res-qual">
-                <div class="quality-mini">Tech Stack</div>
+                <div class="quality-mini"><h2 class="h2-sans">Tech Stack</h2></div>
             </div>
             <!--Three Tech columns -->
             <div class="res-quality-container">
@@ -140,34 +140,97 @@
                 <!--Container with Tech Stack "Read More" Button  -->
                 <div class="read-more-container">
                     <div class="dropdown">
-                        <button onclick="readMoreFunction()" class="btn-primary">READ MORE</button>
+                        <button onclick="readMoreFunction()" class="btn-secondary">READ MORE</button>
                         <div id="read-more-tech" class="dropdown-content-two">
-                            <p>Zip Code Wilmington | Wilmington, DE Feb 2024
-                                –
-                                May 2024
-                                Data Engineer in Training
-                                Completed Zip Code Wilmington’s highly competitive, immersive, data engineering and analytics training
+
+                                <p>Completed Zip Code Wilmington’s highly competitive, immersive, data engineering and analytics training
                                 program which accepts less than 9% of applicants. Engaged in over 1000 hours of data engineering lab
                                 exercises, research, instruction, and technical projects. Gained experience with Python and SQL along with
-                                various other data tools and frameworks. Worked in teams using Agile methodologies.
-                                Technical Projects:
-                                • BeatStream: As an Agile team of 3 built complete data pipeline for music streaming service
-                                simulation using Kafka and Spark to develop dynamic event generators and consumers. Utilized
-                                Google Cloud Storage, Big Query, and DBT for data transformation and predictive model training.
-                                Personally built 3 Python models and designed 3-tier Flask web app hosted on Docker for
-                                visualization and insights for real time music streaming, entertainment, and marketing sectors, as
-                                well as custom illustrations to present complex concepts in understandable and aesthetically
-                                pleasing ways. [Beatstream]
-                                • Visualizing CO2 Emissions: Created web application to visualize summary statistics on world co2
-                                emissions by country per capita designed to be intuitive, engaging, and informative. Sourced data via
-                                CSVs from Our World in Data and the World Bank. Leveraged Flask framework for back end and
-                                HTML/CSS, and JavaScript for frontend. Utilized Python NumPy, Pandas, and Jupyter Lab to derive
-                                conclusions and created custom illustrations with Adobe Illustrator. [Visualizing CO2 Emissions]</p>
+                                various other data tools and frameworks. Worked in teams using Agile methodologies.<br>
+                                <h4>Technical Projects:</h4></p>
+                                <ul>
+                                    <li>
+                                    <strong>BeatStream:</strong> As an Agile team of 3 built complete data pipeline for music streaming service
+                                    simulation using Kafka and Spark to develop dynamic event generators and consumers. Utilized
+                                    Google Cloud Storage, Big Query, and DBT for data transformation and predictive model training.
+                                    Personally built 3 Python models and designed 3-tier Flask web app hosted on Docker for
+                                    visualization and insights for real time music streaming, entertainment, and marketing sectors, as
+                                    well as custom illustrations to present complex concepts in understandable and aesthetically pleasing ways. [Beatstream]
+                                    </li><br>
+
+                                    <li>
+                                        <strong>Visualizing CO2 Emissions:</strong> Created web application to visualize summary statistics on world co2
+                                        emissions by country per capita designed to be intuitive, engaging, and informative. Sourced data via
+                                        CSVs from Our World in Data and the World Bank. Leveraged Flask framework for back and and
+                                        HTML/CSS, and JavaScript for frontend. Utilized Python NumPy, Pandas, and Jupyter Lab to derive
+                                        conclusions and created custom illustrations with Adobe Illustrator. [Visualizing CO2 Emissions]
+                                    </li>
+                                </ul>
+
                         </div>
                     </div>
                 </div>
             <!--End of Tech Stack Container, dividing line -->
 
+            <!--Container for Experience Title-->
+            <div class="res-qual">
+                <div class="quality-mini"><h2 class="h2-sans">Experience</h2></div>
+            </div>
+            <!--Five Experiences Containers -->
+                    <div class="exp-container">
+                        <div class="dropdown">
+                            <button onclick="readMoreFunction()" class="btn-secondary">Zip Code Wilmington</button>
+                            <div id="read-more-ZCW" class="dropdown-content-two">
+                            <span><strong>Zip Code Wilmington</strong> | Wilmington, DE<br>
+                                    Jul 2007 – Jan 2024<br></span>
+                            <p><h4>Data Engineer in Training</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-container">
+                        <div class="dropdown">
+                            <button onclick="readMoreFunction()" class="btn-secondary">Sewn Products Manufacturing Consultant</button>
+                            <div id="read-more-Sewn" class="dropdown-content-two">
+                            <span><strong>Independent Contractor</strong> | Wilmington, DE<br>
+                                Feb 2024 – May 2024<br></span>
+                            <p><h4>Sewn Products Manufacturing Consultant</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-container">
+                        <div class="dropdown">
+                            <button onclick="readMoreFunction()" class="btn-secondary">Textile Goods Teacher</button>
+                            <div id="read-more-NF" class="dropdown-content-two">
+                            <span><strong>NextFab</strong> | Philadelphia, PA<br>
+                                Feb 2018 – Jul 2018<br></span>
+                            <p><h4>Textile Goods Teacher</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-container">
+                        <div class="dropdown">
+                            <button onclick="readMoreFunction()" class="btn-secondary">Child Welfare Provider</button>
+                            <div id="read-more-DFS" class="dropdown-content-two">
+                            <span><strong>Division of Family Service (DFS)</strong> | Wilmington, DE<br>
+                                    Mar 2014 – Aug 2016<br></span>
+                            <p><h4>Child Welfare Provider</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-container">
+                        <div class="dropdown">
+                            <button onclick="readMoreFunction()" class="btn-secondary">Textile Librarian</button>
+                            <div id="read-more-Moret" class="dropdown-content-two">
+                            <span><strong>Jacques Moret Inc.</strong> | New York, NY<br>
+                                    Sep 2004 – Nov 2005<br></span>
+                            <p><h4>Textile Librarian</h4><br>
+                            </div>
+                        </div>
+                    </div>
         <!--v End of Main Container -->
         </div>
     </section>
