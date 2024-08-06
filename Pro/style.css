@@ -593,7 +593,17 @@ div.form1 a {
     .form1,
     .btn-top,
     .skills-menu,
-    .cpy-right {
+    .cpy-right,
+    .dropdown,
+    .navbar-logo,
+    .ribbon,
+    .mini-col,
+    .res-name,
+    .res-qual,
+    .res-quality-container,
+    .quality-mini,
+    .read-more-container,
+    .exp-container {
         grid-column: span 1; /* Each header takes up the full width*/
         grid-row: auto; /* Automatically adjust row position*/
         height: auto; /* Adjust height*/
@@ -723,7 +733,7 @@ div.form1 a {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 .dropdown-content-two {
@@ -731,14 +741,14 @@ div.form1 a {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .dropdown-content-three {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 60vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     font-family: Montserrat, sans-serif;
     color: rgb(68, 81, 90);
