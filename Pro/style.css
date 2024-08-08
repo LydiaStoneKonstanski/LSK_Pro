@@ -234,6 +234,9 @@ a:active {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+.x-tall {
+    height: 2200px;
+}
 .tall {
     height: 50vh;
 }
@@ -615,7 +618,7 @@ div.form1 a {
     background-color: rgb(243, 244, 246);
     height: 77px;
     width: 100%;
-    position: fixed;
+    position: static;
     display: flex;
     /*justify-content: space-between;*/
     align-items: center;
@@ -635,7 +638,7 @@ div.form1 a {
 
 /* Resume Header */
 .ribbon {
-    position: fixed;
+    position: static;
     display: block;
     top: 77px;
     width: 100%;
@@ -908,6 +911,37 @@ div.form1 a {
     cursor: pointer;
     box-sizing: border-box;
 }
+
+.background-container {
+    grid-column: span 12;
+    grid-row: 1/span 1;
+    height: 2100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: rgb(92, 134, 156);*/
+    box-sizing: border-box;
+}
+.about-container {
+    grid-column: span 8;
+    grid-row: 1/span 1;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(133, 160, 179);
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-right: 20px;
+    /*padding-top: 200px;*/
+    width: 80%; /* Ensures it fills parent if needed */
+    max-width: 800px;
+}
+
+
+
 
 
 
