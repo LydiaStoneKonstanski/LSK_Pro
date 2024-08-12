@@ -28,6 +28,7 @@ h2 {
     font-weight: bolder;
     font-size: 5em;
     color:rgb(243, 244, 246);
+    padding: 0;
     /*margin-bottom: 9px;
     margin-top: 9px;*/
 }
@@ -257,6 +258,7 @@ a:active {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
+
 }
 .x-tall {
     height: 2100px;
@@ -1012,51 +1014,61 @@ div.form1 a {
 }
 .about-container1 {
     grid-column: span 12;
-    grid-row: 1/span 3;
-    display: flex;
+    grid-template-columns: 1fr 11fr;
+    display: grid;
+    height: 100%;
 }
 #about1 {
-    grid-column: span 2;
-    grid-row: 1/span 3;
-    display: flex;
+    grid-column: 1/2;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
     text-align: center;
+    display: flex;
     justify-content: center;
-    align-items: baseline;
+    padding: 0;
+    align-items: center;
     box-sizing: border-box;
+    border: 2px solid red;
+}
+#about1 h1 {
+    margin: 10px;
 }
 #about2 {
-    grid-column: span 11;
-    grid-row: 3/span 3;
+    grid-column: 2/13;
+    grid-row: 1/span 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
-    border: 2px red solid;
+    border: 2px solid red;
 }
 .about-mini {
-    grid-column: span 11;
-    grid-row: 1/span 1;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    border: 2px red solid;
+    border: 2px solid red;
 }
 .about-ultra-mini {
-    grid-column: span 7;
-    grid-row: 1/span 1;
+    flex: 1 1 0;
     display: flex;
-    border: 2px red solid;
+    height: 200px;
+    padding: 0 20px;
+    border: 2px solid red;
     flex-direction: column;
 }
+.about-ultra-mini ul {
+    margin: 0;
+    font-size: 14px;
+}
+.about-ultra-mini p {
+    font-size: 14px;
+}
 .about-ultra-mini2 {
-    grid-column: span 4;
-    grid-row: 1/span 1;
     background-color: white;
     display: flex;
-    border: 2px red solid;
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
 }
 
 
