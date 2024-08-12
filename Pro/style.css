@@ -479,7 +479,6 @@ menu.nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(133, 160, 179);
 }
 .three-quarter-col {
     grid-column: span 9;
@@ -488,7 +487,6 @@ menu.nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(186, 200, 211);
 }
 .cr1, .cr2, .cr3 {
     display: flex;
@@ -1016,7 +1014,7 @@ div.form1 a {
     grid-column: span 12;
     grid-template-columns: 1fr 11fr;
     display: grid;
-    height: 100%;
+    height: 60vh;
 }
 #about1 {
     grid-column: 1/2;
@@ -1024,11 +1022,11 @@ div.form1 a {
     writing-mode: vertical-lr;
     text-align: center;
     display: flex;
+    height: 60vh;
     justify-content: center;
     padding: 0;
     align-items: center;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 #about1 h1 {
     margin: 10px;
@@ -1037,24 +1035,26 @@ div.form1 a {
     grid-column: 2/13;
     grid-row: 1/span 1;
     display: flex;
+    height: 60vh;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 10px;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 .about-mini {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    height: 20vh;
+    box-sizing: border-box;
 }
 .about-ultra-mini {
     flex: 1 1 0;
     display: flex;
-    height: 200px;
+    height: 20vh;
     padding: 0 20px;
-    border: 2px solid red;
+    box-sizing: border-box;
     flex-direction: column;
+    overflow: scroll;
 }
 .about-ultra-mini ul {
     margin: 0;
@@ -1066,10 +1066,27 @@ div.form1 a {
 .about-ultra-mini2 {
     background-color: white;
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 18vh;
+    width: 22vh;
+    margin:0 10px;
+    box-sizing: border-box;
+}
+.about-border {
+    border-top: 14px solid rgb(92, 134, 156);
+}
+.about-ultra-mini2,
+.about-ultra-mini,
+.about-mini,
+#about2,
+#about1,
+.quarter-col,
+.three-quarter-col
+#about-image{
     border: 2px solid red;
 }
-
-
-
+#about-image {
+    background-color: white;
+    display: flex;
+    margin:20px;
+    box-sizing: border-box;
+}
